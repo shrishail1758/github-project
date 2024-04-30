@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<link rel="stylesheet"
+		href= 
+"https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
+	<script src= 
+"https://code.jquery.com/jquery-2.1.3.js"> 
+	</script> 
+	<script src= 
+"https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"> 
+	</script> 
+	<style> 
+		h1 { 
+			color: green; 
+		} 
+	</style> 
+	<script> 
+	$(document).ready(function() { 
+		$("#divID2").toolbar({ 
+			addBackBtn: true, 
+		}); 
+	}); 
+	</script> 
+</head> 
+
+<body> 
+	<center> 
+		<!-- 1st Page -->
+		 <div data-role="page" id="page1"> 
+         <strong>Tool bar add back button option</strong>
+         <div id="div" data-role="header">
+            <h1>Shradhesh bhau yedzava</h1>
+         </div>
+         <a href="#page2">go to page 2</a>  
+         </div> 
+		
+		<!-- 2nd Page -->
+		<div data-role="page" id="page2"> 
+			<div id="divID2" data-role="header"> 
+				<h2>Shradhesh yedya gandicha</h2> 
+			</div> 
+            <a href="#page1">go to page 1</a>
+			<h1> 
+				Geeksforgeeks 
+			</h1> 
+			<p> 
+				GeeksforGeeks is a computer science 
+				portal for geeks by geeks. Here you can 
+				find articles on various computer science 
+				topics like Data Structures, Algorithms 
+				and many more. 
+			</p> 
+		</div> 
+	</center> 
+</body> 
+
+</html>
